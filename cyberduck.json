@@ -1,0 +1,20 @@
+{
+    "homepage": "https://cyberduck.io/",
+    "version": "6.8.0.28825",
+    "url": "https://update.cyberduck.io/windows/Cyberduck-Installer-6.8.0.28825.msi",
+    "extract_dir": "Cyberduck",
+    "bin": "Cyberduck.exe",
+    "shortcuts": [
+        [
+            "Cyberduck.exe",
+            "Cyberduck"
+        ]
+    ],
+    "autoupdate": {
+        "url": "https://update.cyberduck.io/windows/Cyberduck-Installer-$version.msi"
+    },
+    "checkver": {
+        "url": "https://update.cyberduck.io/windows/",
+        "re": "<img src=\"\\/img\\/exe.*<a href=\"Cyberduck-Installer-([\\d\\.]*)\\.msi\">"
+    }
+}
